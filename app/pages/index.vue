@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-auto w-full sm:w-fit flex flex-col gap-2">
     <CategoryContainer title="Languages" :pages="pagesLanguages" />
     <CategoryContainer title="Framework" :pages="pageFrameworks" />
     <CategoryContainer title="Tools" :pages="pagesTools" />

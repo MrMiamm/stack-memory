@@ -1,10 +1,13 @@
 @import "tailwindcss";
+@import './markdown.css';
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     --color-app-dark: #000;
     --color-app-light: #fff;
 }
+
+/************************************************************************/
 
 body {
     overflow-x: hidden;
@@ -15,8 +18,10 @@ body {
     @apply bg-app-light text-app-dark dark:bg-app-dark dark:text-app-light;
 }
 
+/************************************************************************/
+
 h1, h2, h3, h4 {
-    @apply font-bold mb-2;
+    @apply font-bold;
 }
 
 h1 {
@@ -35,6 +40,4 @@ h4 {
     @apply text-xl;
 }
 
-pre:has(code) {
-    @apply bg-app-dark/10 dark:bg-app-light/10 
-}
+/************************************************************************/

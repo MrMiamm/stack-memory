@@ -1,0 +1,7 @@
+#markdown h1, #markdown h2, #markdown h3, #markdown h4  {
+    @apply mb-2;
+}
+
+#markdown pre:has(code) {
+    @apply bg-app-dark/10 dark:bg-app-light/10 p-2 
+}

@@ -1,8 +1,9 @@
 <template>
   <ContentRenderer
     v-if="selectedPage"
+    id="markdown"
     :value="selectedPage"
-    class="mx-auto flex flex-col gap-2 w-150 min-w-fit"
+    class="mx-auto flex flex-col gap-2 w-full sm:w-150"
   />
 </template>
 

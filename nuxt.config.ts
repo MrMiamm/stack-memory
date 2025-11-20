@@ -5,18 +5,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
-  modules: [
-    '@nuxt/content',
-    '@nuxt/fonts',
-  ],
+  modules: ['@nuxt/content', '@nuxt/fonts', '@nuxtjs/color-mode'],
 
   content: {
     build: {
       markdown: {
         highlight: {
           theme: {
-            default: 'github-light',
-            dark: 'github-dark',
+            default: 'slack-ochin',
+            dark: 'slack-dark',
           }
         }
       }
