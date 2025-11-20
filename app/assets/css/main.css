@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-app-dark: #000;
+    --color-app-light: #fff;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+
+#app {
+    @apply bg-app-light text-app-dark dark:bg-app-dark dark:text-app-light;
+}
+
+h1, h2, h3, h4 {
+    @apply font-bold mb-2;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+pre:has(code) {
+    @apply bg-app-dark/10 dark:bg-app-light/10 
+}
